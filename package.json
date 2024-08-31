@@ -1,7 +1,7 @@
 {
   "name": "carro-de-compras",
   "version": "0.1.0",
-  "homepage": "https://IsaacMZ17.github.io/CarroCompras",
+  "homepage": "https://isaacmz17.github.io/CarroCompras/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
