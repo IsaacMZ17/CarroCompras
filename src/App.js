@@ -1,15 +1,15 @@
-import { Component } from 'react';
+import React from 'react';
 import Productos from './components/Productos';
 import Layout from './components/Layout'
 import Title from './components/Title'
 import Navbar from './components/Navbar'
 
-class App extends Component {
+class App extends React.Component {
   state = {
     productos: [
-      { name: 'Tomate', price: 1500, img: '/productos/tomate.png' },
-      { name: 'Arvejas', price: 2500, img: '/productos/arvejas.png' },
-      { name: 'Lechuga', price: 500, img: '/productos/lechuga.png' }
+      { name: 'Tomate', price: 1500, img: `${process.env.PUBLIC_URL}/productos/tomate.png` },
+      { name: 'Arvejas', price: 2500, img: `${process.env.PUBLIC_URL}/productos/arvejas.png` },
+      { name: 'Lechuga', price: 500, img: `${process.env.PUBLIC_URL}/productos/lechuga.png` }
     ],
     carro: [],
     esCarroVisible: false,
@@ -35,9 +35,7 @@ class App extends Component {
   }
 
   mostrarCarro = () => {
-    if(this.state.carro.length) {
-      return
-    }
+    console.log("Botón de carro clickeado");
     this.setState({ esCarroVisible: !this.state.esCarroVisible })
   }
 

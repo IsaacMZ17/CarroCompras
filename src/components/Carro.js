@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import BubbleAlert from './BubbleAlert'
 import DetallesCarro from './DetallesCarro'
 
@@ -22,9 +22,10 @@ class Carro extends Component {
     render() {
         const { carro, esCarrovisible, mostrarCarro } = this.props
         const cantidad = carro.reduce((acc, el) => acc + el.cantidad, 0)
+        
         return (
             <div>
-                {/* <span style={styles.bubble}>
+                <span style={styles.bubble}>
                     {cantidad !== 0
                       ? <BubbleAlert value={cantidad}/> 
                       : null}
@@ -32,9 +33,9 @@ class Carro extends Component {
                 <button style={styles.carro}>
                     Carro
                 </button>
-                <DetallesCarro carro={carro} /> */}
+                <DetallesCarro carro={carro} />
 
-                <span style={styles.bubble}>
+                {/* <span style={styles.bubble}>
                     {cantidad !== 0
                       ? <BubbleAlert value={cantidad}/> 
                       : null}
@@ -42,7 +43,7 @@ class Carro extends Component {
                 <button onClick={mostrarCarro} style={styles.carro}>
                     Carro
                 </button>
-                {esCarrovisible ? <DetallesCarro carro={carro} /> : null}
+                {esCarrovisible ? <DetallesCarro carro={carro} /> : null} */}
             </div>
         )
     }
