@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React from "react";
 
 const styles = {
     title: {
@@ -6,7 +6,7 @@ const styles = {
     }
 }
 
-class Title extends Component {
+class Title extends React {
     render() {
         return (
             <h1 style={StyleSheet.title}>Tienda</h1>
